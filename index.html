@@ -9,14 +9,95 @@
     <title>Lang 3</title>
 </head>
 <body>
-    <div class="sidebar">
-        <div class="sidebar__logo">
-            <div class="logo__image">
-                <img src="/src/img/logo.png" alt="Logotipe" class="logo">
+    <section class="sidebar__container">
+        <div class="sidebar">
+            <div class="sidebar__top">
+                <div class="sidebar__logo">
+                    <div class="logo__image">
+                        <img src="/src/img/logo.png" alt="Logotipe" class="logo">
+                    </div>
+        
+                    <span class="logo__name">LANG<sup>3</sup></span>
+                </div>
+    
+                <nav class="sidebar__nav">
+                    <ul class="sidebar__list">
+                        <li class="sidebar__listItem">
+                            <a href="#">
+                                <i class="uil uil-estate"></i>
+                                <span class="sidebar__listItem--name">Dahsboard</span>
+                            </a>
+                        </li>
+    
+                        <li class="sidebar__listItem">
+                            <a href="#">
+                                <i class="uil uil-files-landscapes"></i>
+                                <span class="sidebar__listItem--name">Content</span>
+                            </a>
+                        </li>
+    
+                        <li class="sidebar__listItem">
+                            <a href="#">
+                                <i class="uil uil-chart"></i>
+                                <span class="sidebar__listItem--name">Analytics</span>
+                            </a>
+                        </li>
+    
+                        <li class="sidebar__listItem">
+                            <a href="#">
+                                <i class="uil uil-thumbs-up"></i>
+                                <span class="sidebar__listItem--name">Like</span>
+                            </a>
+                        </li>
+    
+                        <li class="sidebar__listItem">
+                            <a href="#">
+                                <i class="uil uil-comments"></i>
+                                <span class="sidebar__listItem--name">Comment</span>
+                            </a>
+                        </li>
+    
+                        <li class="sidebar__listItem">
+                            <a href="#">
+                                <i class="uil uil-share"></i>
+                                <span class="sidebar__listItem--name">Share</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-
-            <span class="logo__name">LANG<sup>3</sup></span>
+            <div class="sidebar__bottom">
+                <ul class="sidebar__list">
+                    <li class="sidebar__listItem">
+                        <a href="#">
+                            <i class="uil uil-signout"></i>
+                        <span class="sidebar__listItem--name">Logout</span>
+                        </a>
+                    </li>
+    
+                    <li class="sidebar__listItem">
+                        <a href="#">
+                            <i class="uil uil-share"></i>
+                            <span class="sidebar__listItem--name">Share</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </section>
+    <section class="main__container">
+        <header class="main__header">
+            <i class="uil uil-bars header__toggle"></i>
+
+            <div class="header__search">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            
+            <div class="header__profile">
+                <img src="./src/img/" alt="" class="header__image">
+            </div>
+        </header>
+    </section>
 </body>
 </html>

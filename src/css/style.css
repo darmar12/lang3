@@ -9,9 +9,14 @@
 }
 
 body {
+    display: flex;
     min-height: 100vh;
     background-color: #0e4bf1;
     font-family: 'Poppins', sans-serif;
+}
+
+.sidebar__container {
+    width: 250px;
 }
 
 .sidebar {
@@ -22,6 +27,15 @@ body {
     width: 250px;
     background-color: #fff;
     padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar__top {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
 }
 
 .sidebar__logo {
@@ -48,4 +62,35 @@ body {
 .logo__name > sup {
     color: #0e4bf1;
     font-size: 14px;
+}
+
+.sidebar__list {
+    list-style: none;
+}
+
+.sidebar__listItem {
+
+}
+
+.sidebar__listItem > a {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    text-decoration: none;
+}
+
+.main__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
