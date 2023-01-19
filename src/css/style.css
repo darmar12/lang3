@@ -16,7 +16,7 @@ body {
 }
 
 .sidebar__container {
-    width: 250px;
+    width: 350px;
 }
 
 .sidebar {
@@ -24,7 +24,7 @@ body {
     top: 0;
     left: 0; 
     height: 100%;
-    width: 250px;
+    width: 350px;
     background-color: #fff;
     padding: 15px 10px;
     display: flex;
@@ -41,7 +41,7 @@ body {
 .sidebar__logo {
     display: flex;
     align-items: center;
-    gap: 0 75px;
+    gap: 0 35px;
 }
 
 .logo__image {
@@ -80,9 +80,12 @@ body {
 }
 
 .main__container {
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
+    background-color: #fff;
+    border-left: 1px solid #eee;
 }
 
 .main__header {
@@ -93,4 +96,113 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px 40px 0;
+}
+
+.dashboard,
+.activity {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main__title--box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main__title--box > i {
+    height: 35px;
+    width: 35px;
+    background-color: #0E4BF1;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+}
+
+.dashboard__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 50px;
+}
+
+.dashboard__item {
+    flex: 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    padding: 40px 0;
+    color: #000;
+    font-weight: 500;
+    transition: all .5s linear;
+}
+
+.dashboard__item:first-child {
+    background-color: #4DA3FF;
+}
+
+.dashboard__item:nth-child(2) {
+    background-color: #FFE6AC;
+}
+
+.dashboard__item:last-child {
+    background-color: #E7D1FC;
+}
+
+.dashboard__item i {
+    font-size: 35px;
+}
+
+.dashboard__text {
+    font-size: 18px;
+}
+
+.dashboard__number {
+    font-size: 40px;
+}
+
+.activity__table {
+    width: 100%;
+}
+
+.activity__table > thead .activity_row {
+    width: 100%;
+}
+
+.activity__boldText {
+    flex: 1 15%;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.activity__text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    padding: 10px 0 5px 0;
+    text-align: center;
+}
+
+.activity__table > tbody .activity_row:hover {
+    background-color: #eee;
 }
